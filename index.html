@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+</head>
+<body>
+    <header class="  head">
+        <nav class=" container navbar nav navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <h3>Hungry  <span style="color: #f06c4e;">Monster</span> </h3>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse nav flex-row-reverse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recipes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- nav end -->
+        <div class="container">
+          <div class="flex">
+              <form class="flex" id="submit">
+                <input type="text" id="search" placeholder="Search for meals...">
+                <button class="search-btn" type="submit">
+                    <i class="fas fa-search">  Search</i>
+                </button>
+              </form>
+              
+          </div>
+          <div class="result-heading"></div>
+          <div id="meals" class="meals"></div>
+          <div id="single-meal"></div>
+      </div>
+    <!-- javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
